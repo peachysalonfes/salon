@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peachy Salon Fès — Maquillage Mariée, Coiffure & Onglerie</title>
+    <meta name="description" content="Peachy Salon à Fès : Sublimez votre beauté naturelle avec Khaoula, Amina et Ghita. Maquillage mariée, coiffure, brushing longue tenue, manucure et soins.">
+    
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        peach: {
+                            50: '#FFF8F5',
+                            100: '#FDECE4',
+                            200: '#FAD7C8',
+                            300: '#F4B8A7',
+                            400: '#E8998D',
+                            500: '#D97B6C',
+                            600: '#C05E4F',
+                        },
+                        espresso: {
+                            DEFAULT: '#2C2220',
+                            light: '#5A4A46',
+                            muted: '#85736F',
+                        },
+                        champagne: {
+                            DEFAULT: '#C69C6D',
+                            light: '#E3C9A8',
+                            dark: '#9E774B',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(217, 123, 108, 0.14)',
+                        'card': '0 10px 30px -10px rgba(44, 34, 32, 0.06)',
+                        'glow': '0 0 40px rgba(232, 153, 141, 0.28)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FFF8F5;
+            color: #2C2220;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .font-editorial {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+        }
+
+        /* Glassmorphism Navbar & Floating Cards */
+        .glass-nav {
+            background: rgba(255, 248, 245, 0.85);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(232, 153, 141, 0.22);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.78);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+        }
+
+        /* Subtle Floating Animation */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        @keyframes floatDelayed {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-float {
+            animation: floatSlow 6s ease-in-out infinite;
+        }
+        .animate-float-delayed {
+            animation: floatDelayed 7s ease-in-out 2s infinite;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF8F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E8998D;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D97B6C;
+        }
+
+        /* Tab transition */
+        .fade-in {
+            animation: fadeIn 0.35s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-peach-200 selection:text-espresso">
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <header class="fixed top-0 inset-x-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-peach-300 via-peach-400 to-peach-500 flex items-center justify-center text-white shadow-soft group-hover:scale-105 transition-transform">
+                        <!-- Custom Peach & Sparkle Motif SVG -->
+                        <svg class="w-6 h-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 9C12.5 9 8.5 11.5 8.5 16.5C8.5 21.8 13.5 25.5 16 26.5C18.5 25.5 23.5 21.8 23.5 16.5C23.5 11.5 19.5 9 16 9Z" fill="white" fill-opacity="0.95"/>
+                            <path d="M16 9C16 13.5 14.5 18.5 16 26.5" stroke="#D97B6C" stroke-width="1.4" stroke-linecap="round"/>
+                            <path d="M16 8.5C16.5 6 19 4.5 21.5 5C20.5 7.5 18.2 8.8 16 8.5Z" fill="#FFF8F5"/>
+                            <path d="M25.5 6L26.2 7.8L28 8.5L26.2 9.2L25.5 11L24.8 9.2L23 8.5L24.8 7.8L25.5 6Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-editorial text-2xl sm:text-3xl font-bold tracking-tight text-espresso block leading-none">Peachy Salon</span>
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-peach-600 font-semibold block mt-0.5">Fès • Maroc</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-espresso-light">
+                    <a href="#services" class="hover:text-peach-600 transition-colors" data-i18n="nav_services">Services</a>
+                    <a href="#equipe" class="hover:text-peach-600 transition-colors" data-i18n="nav_team">Équipe</a>
+                    <a href="#avis" class="hover:text-peach-600 transition-colors" data-i18n="nav_reviews">Avis Clients</a>
+                    <a href="#tarifs" class="hover:text-peach-600 transition-colors" data-i18n="nav_pricing">Tarifs & Devis</a>
+                    <a href="#reserver" class="hover:text-peach-600 transition-colors" data-i18n="nav_book">Réserver</a>
+                </nav>
+
+                <!-- Right Actions: Language Toggle, Instagram, CTA -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <!-- Language Switcher FR / EN -->
+                    <div class="inline-flex items-center bg-peach-100/90 p-1 rounded-full border border-peach-200" role="group" aria-label="Language Switcher">
+                        <button id="lang-fr" onclick="setLanguage('fr')" class="px-2.5 py-1 rounded-full text-xs font-semibold transition-all bg-espresso text-white shadow-sm">FR</button>
+                        <button id="lang-en" onclick="setLanguage('en')" class="px-2.5 py-1 rounded-full text-xs font-semibold transition-all text-espresso-light hover:text-espresso">EN</button>
+                    </div>
+
+                    <!-- Instagram Icon Link -->
+                    <a href="https://www.instagram.com/peachy.salon/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @peachy.salon" class="p-2.5 rounded-full bg-white border border-peach-200 text-espresso hover:text-peach-600 hover:border-peach-400 transition-all shadow-sm">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Quick Book CTA -->
+                    <a href="#reserver" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-espresso text-white text-xs font-semibold hover:bg-peach-600 transition-all shadow-card" data-i18n="nav_cta">
+                        Prendre Rendez-vous
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-peach-100 text-espresso hover:bg-peach-200 transition-colors" aria-label="Menu">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-peach-50/95 backdrop-blur-lg border-b border-peach-200 px-4 pt-3 pb-6 space-y-3">
+            <a href="#services" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-xl text-sm font-medium text-espresso hover:bg-peach-100" data-i18n="nav_services">Services</a>
+            <a href="#equipe" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-xl text-sm font-medium text-espresso hover:bg-peach-100" data-i18n="nav_team">Équipe</a>
+            <a href="#avis" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-xl text-sm font-medium text-espresso hover:bg-peach-100" data-i18n="nav_reviews">Avis Clients</a>
+            <a href="#tarifs" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-xl text-sm font-medium text-espresso hover:bg-peach-100" data-i18n="nav_pricing">Tarifs & Devis</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="#reserver" onclick="toggleMobileMenu()" class="w-full text-center py-3 rounded-full bg-espresso text-white text-sm font-semibold" data-i18n="nav_cta">Prendre Rendez-vous</a>
+                <a href="https://www.instagram.com/peachy.salon/" target="_blank" rel="noopener noreferrer" class="w-full text-center py-2.5 rounded-full border border-peach-300 text-peach-600 text-xs font-semibold">@peachy.salon sur Instagram</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="relative pt-28 pb-16 sm:pt-36 sm:pb-24 overflow-hidden">
+        <!-- Decorative Ambient Peach Glows -->
+        <div class="absolute top-16 -left-24 w-96 h-96 bg-peach-200/50 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 -right-24 w-[28rem] h-[28rem] bg-peach-300/35 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+                
+                <!-- Left Editorial Copy -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <!-- Social Proof Pill -->
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/90 border border-peach-200 shadow-card">
+                        <span class="flex items-center text-champagne font-bold text-sm">4.8 ★</span>
+                        <span class="w-1 h-1 rounded-full bg-peach-400"></span>
+                        <span class="text-xs sm:text-sm font-medium text-espresso-light" data-i18n="hero_badge">sur Google • Recommandé par nos mariées et clientes à Fès</span>
+                    </div>
+
+                    <!-- Main Editorial Headline -->
+                    <h1 class="text-4xl sm:text-6xl lg:text-[4.25rem] font-semibold text-espresso leading-[1.08] tracking-tight" data-i18n="hero_title">
+                        Sublimez votre beauté naturelle au cœur de Fès
+                    </h1>
+
+                    <!-- Subheadline -->
+                    <p class="text-base sm:text-lg text-espresso-light max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal" data-i18n="hero_subtitle">
+                        De la mise en beauté de mariée sur-mesure aux brushings longue tenue et soins d'onglerie raffinés : <strong class="font-semibold text-espresso">Khaoula, Amina et Ghita</strong> vous accueillent dans un écrin chaleureux, propre et bienveillant.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#reserver" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-peach-500 to-peach-600 text-white font-semibold text-sm shadow-soft hover:shadow-glow hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+                            <span data-i18n="hero_cta_primary">Réserver une séance</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white border border-peach-300 text-espresso font-semibold text-sm hover:bg-peach-100/70 transition-all flex items-center justify-center gap-2" data-i18n="hero_cta_secondary">
+                            Découvrir nos services
+                        </a>
+                    </div>
+
+                    <!-- Trust Highlights Bar -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 border-t border-peach-200/80">
+                        <div>
+                            <p class="font-editorial text-2xl sm:text-3xl font-bold text-espresso">100%</p>
+                            <p class="text-xs text-espresso-muted" data-i18n="stat_1">Tarifs fixes & transparents</p>
+                        </div>
+                        <div>
+                            <p class="font-editorial text-2xl sm:text-3xl font-bold text-espresso">Hygiène</p>
+                            <p class="text-xs text-espresso-muted" data-i18n="stat_2">Protocoles stricts & matériel stérilisé</p>
+                        </div>
+                        <div>
+                            <p class="font-editorial text-2xl sm:text-3xl font-bold text-espresso">Fès</p>
+                            <p class="text-xs text-espresso-muted" data-i18n="stat_3">Accompagnement Mariées & Soins</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Editorial Bespoke SVG Showcase Frame -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Arch Editorial Card -->
+                        <div class="relative rounded-t-[11rem] rounded-b-[2.5rem] bg-gradient-to-b from-peach-100 via-peach-200/70 to-peach-300/60 p-6 sm:p-8 border border-white shadow-soft overflow-hidden">
+                            <!-- Decorative SVG Botanical & Editorial Silhouette Art -->
+                            <svg class="w-full h-auto rounded-t-[9.5rem] rounded-b-3xl bg-[#FFFDFB] shadow-inner" viewBox="0 0 400 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="peachGrad" x1="0" y1="0" x2="400" y2="490" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#FFF8F5"/>
+                                        <stop offset="55%" stop-color="#FDECE4"/>
+                                        <stop offset="100%" stop-color="#F4B8A7" stop-opacity="0.55"/>
+                                    </linearGradient>
+                                    <linearGradient id="goldArc" x1="80" y1="60" x2="320" y2="400" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#C69C6D"/>
+                                        <stop offset="100%" stop-color="#E8998D"/>
+                                    </linearGradient>
+                                    <radialGradient id="sunGlow" cx="50%" cy="35%" r="50%">
+                                        <stop offset="0%" stop-color="#E8998D" stop-opacity="0.35"/>
+                                        <stop offset="100%" stop-color="#FFF8F5" stop-opacity="0"/>
+                                    </radialGradient>
+                                </defs>
+                                
+                                <!-- Background -->
+                                <rect width="400" height="490" fill="url(#peachGrad)"/>
+                                <circle cx="200" cy="180" r="150" fill="url(#sunGlow)"/>
+                                
+                                <!-- Thin Champagne Gold Arch Border -->
+                                <path d="M36 460V200C36 109.425 109.425 36 200 36C290.575 36 364 109.425 364 200V460H36Z" stroke="url(#goldArc)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                                
+                                <!-- Abstract Editorial Line-Art Portrait & Bridal Veil Motif -->
+                                <path d="M135 370C135 310 165 280 200 280C235 280 265 310 265 370" stroke="#2C2220" stroke-width="1.8" stroke-linecap="round"/>
+                                <!-- Neck & Face Contour -->
+                                <path d="M186 248V282M214 248V282" stroke="#2C2220" stroke-width="1.6" stroke-linecap="round"/>
+                                <path d="M168 185C168 224 182 252 200 252C218 252 232 224 232 185C232 148 218 128 200 128C182 128 168 148 168 185Z" fill="#FFF8F5" stroke="#2C2220" stroke-width="1.8"/>
+                                <!-- Flowing Hair & Bridal Crown -->
+                                <path d="M166 190C150 165 155 115 200 112C245 115 250 165 234 190" stroke="#2C2220" stroke-width="1.8" stroke-linecap="round"/>
+                                <path d="M162 152C140 190 132 250 148 310" stroke="#D97B6C" stroke-width="1.6" stroke-linecap="round"/>
+                                <path d="M238 152C260 190 268 250 252 310" stroke="#D97B6C" stroke-width="1.6" stroke-linecap="round"/>
+                                <!-- Delicate Eyes & Lips -->
+                                <path d="M180 184C184 180 190 180 194 184" stroke="#2C2220" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M206 184C210 180 216 180 220 184" stroke="#2C2220" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M192 222C196 225 204 225 208 222" stroke="#D97B6C" stroke-width="2.2" stroke-linecap="round"/>
+                                <!-- Blush Glow -->
+                                <circle cx="179" cy="202" r="9" fill="#E8998D" fill-opacity="0.35"/>
+                                <circle cx="221" cy="202" r="9" fill="#E8998D" fill-opacity="0.35"/>
+                                <!-- Tiara / Sparkle Accent -->
+                                <path d="M182 115L191 103L200 112L209 103L218 115" stroke="#C69C6D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="200" cy="96" r="2.5" fill="#C69C6D"/>
+
+                                <!-- Bottom Editorial Caption inside SVG -->
+                                <text x="200" y="415" text-anchor="middle" fill="#2C2220" font-family="Cormorant Garamond, serif" font-size="22" font-style="italic" font-weight="600">L'Art de la Mise en Beauté</text>
+                                <text x="200" y="438" text-anchor="middle" fill="#85736F" font-family="Plus Jakarta Sans, sans-serif" font-size="10" letter-spacing="3">PEACHY SALON • FÈS</text>
+                            </svg>
+                        </div>
+
+                        <!-- Floating Glass Card 1: Mariée & Invitée -->
+                        <div class="animate-float glass-card rounded-2xl p-3.5 shadow-card flex items-center gap-3 absolute -left-3 sm:-left-8 top-14 max-w-[215px]">
+                            <div class="w-10 h-10 rounded-xl bg-peach-100 text-peach-600 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-espresso" data-i18n="float_1_title">Mariée & Invitée</p>
+                                <p class="text-[11px] text-espresso-muted" data-i18n="float_1_sub">Maquillage par Khaoula</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Card 2: Manucure & Nail Art -->
+                        <div class="animate-float-delayed glass-card rounded-2xl p-3.5 shadow-card flex items-center gap-3 absolute -right-2 sm:-right-7 top-1/2 -translate-y-1/2 max-w-[210px]">
+                            <div class="w-10 h-10 rounded-xl bg-champagne/15 text-champagne-dark flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-espresso" data-i18n="float_2_title">Manucure & Nail Art</p>
+                                <p class="text-[11px] text-espresso-muted" data-i18n="float_2_sub">Finitions par Ghita</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Card 3: Brushing & Lissage -->
+                        <div class="animate-float glass-card rounded-2xl p-3.5 shadow-card flex items-center gap-3 absolute left-4 sm:left-6 -bottom-5 max-w-[230px]">
+                            <div class="w-10 h-10 rounded-xl bg-peach-500 text-white flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-espresso" data-i18n="float_3_title">Brushing & Curly</p>
+                                <p class="text-[11px] text-espresso-muted" data-i18n="float_3_sub">Tenue impeccable • Amina</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES & TRANSPARENT PRICING ==================== -->
+    <section id="services" class="py-20 bg-white/70 border-y border-peach-200/60">
+        <div id="tarifs" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+                <span class="inline-block text-xs font-bold uppercase tracking-[0.22em] text-peach-600" data-i18n="srv_eyebrow">Carte des Prestations & Tarifs Transparents</span>
+                <h2 class="text-3xl sm:text-5xl font-semibold text-espresso" data-i18n="srv_title">Nos Soins & Mises en Beauté</h2>
+                <p class="text-sm sm:text-base text-espresso-light leading-relaxed" data-i18n="srv_subtitle">
+                    Chez Peachy Salon, nos tarifs sont fixes, affichés et identiques pour toutes nos clientes. Sélectionnez vos prestations pour préparer votre rendez-vous.
+                </p>
+            </div>
+
+            <!-- Interactive Category Tabs -->
+            <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-10" id="service-tabs">
+                <button onclick="filterServices('makeup')" data-cat="makeup" class="service-tab active px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-espresso text-white shadow-card" data-i18n="cat_makeup">
+                    Maquillage & Mariée
+                </button>
+                <button onclick="filterServices('hair')" data-cat="hair" class="service-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-peach-100 text-espresso hover:bg-peach-200" data-i18n="cat_hair">
+                    Coiffure & Soins Capillaires
+                </button>
+                <button onclick="filterServices('nails')" data-cat="nails" class="service-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-peach-100 text-espresso hover:bg-peach-200" data-i18n="cat_nails">
+                    Onglerie (Manucure & Pédicure)
+                </button>
+                <button onclick="filterServices('beauty')" data-cat="beauty" class="service-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-peach-100 text-espresso hover:bg-peach-200" data-i18n="cat_beauty">
+                    Esthétique & Épilation
+                </button>
+            </div>
+
+            <!-- Services Grid Container -->
+            <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Populated dynamically via JS for seamless FR/EN & Cart integration -->
+            </div>
+
+            <!-- Selected Services Floating Summary Banner -->
+            <div id="selection-bar" class="hidden mt-10 p-5 sm:p-6 rounded-3xl bg-gradient-to-r from-peach-100 via-peach-50 to-peach-100 border border-peach-300 shadow-soft flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3.5 text-center sm:text-left">
+                    <div class="w-11 h-11 rounded-2xl bg-peach-500 text-white flex items-center justify-center font-bold text-base shrink-0" id="selection-count">0</div>
+                    <div>
+                        <p class="text-sm font-bold text-espresso" data-i18n="sel_bar_title">Prestation(s) sélectionnée(s) pour votre rendez-vous</p>
+                        <p class="text-xs text-espresso-light" id="selection-names">—</p>
+                    </div>
+                </div>
+                <a href="#reserver" class="w-full sm:w-auto px-6 py-3 rounded-full bg-espresso text-white text-xs font-semibold hover:bg-peach-600 transition-colors text-center" data-i18n="sel_bar_cta">
+                    Finaliser ma réservation ↓
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== L'ÉQUIPE PEACHY ==================== -->
+    <section id="equipe" class="py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+                <span class="inline-block text-xs font-bold uppercase tracking-[0.22em] text-peach-600" data-i18n="team_eyebrow">Savoir-Faire & Bienveillance</span>
+                <h2 class="text-3xl sm:text-5xl font-semibold text-espresso" data-i18n="team_title">L'Équipe Peachy Salon</h2>
+                <p class="text-sm sm:text-base text-espresso-light" data-i18n="team_subtitle">
+                    Saluées dans les avis de nos clientes pour leur écoute, leur patience et leur talent artistique.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Team Member 1: Khaoula -->
+                <div class="group bg-white rounded-3xl p-7 border border-peach-200/80 shadow-card hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <!-- Custom Monogram Avatar -->
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-peach-400 to-peach-600 text-white flex items-center justify-center font-editorial text-3xl font-bold shadow-soft">
+                                K
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-peach-100 text-peach-600 text-[11px] font-semibold" data-i18n="role_khaoula_badge">Fondatrice & MUA</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-espresso mb-1">Khaoula</h3>
+                        <p class="text-xs font-semibold text-champagne-dark uppercase tracking-wider mb-3" data-i18n="role_khaoula_title">Maquilleuse Principale & Spécialiste Mariées</p>
+                        <p class="text-sm text-espresso-light leading-relaxed mb-5" data-i18n="role_khaoula_desc">
+                            Reconnue par ses mariées pour sa présence rassurante du début à la fin, son écoute attentive et ses mises en beauté lumineuses qui subliment chaque visage.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-peach-100 flex items-center justify-between">
+                        <span class="text-xs text-espresso-muted italic">« Tu m'as vraiment sublimée »</span>
+                        <button onclick="bookWithSpecialist('Khaoula')" class="text-xs font-bold text-peach-600 hover:text-espresso transition-colors" data-i18n="book_with">Réserver →</button>
+                    </div>
+                </div>
+
+                <!-- Team Member 2: Amina -->
+                <div class="group bg-white rounded-3xl p-7 border border-peach-200/80 shadow-card hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-champagne to-champagne-dark text-white flex items-center justify-center font-editorial text-3xl font-bold shadow-soft">
+                                A
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-champagne/15 text-champagne-dark text-[11px] font-semibold" data-i18n="role_amina_badge">Hair Stylist</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-espresso mb-1">Amina</h3>
+                        <p class="text-xs font-semibold text-champagne-dark uppercase tracking-wider mb-3" data-i18n="role_amina_title">Experte Coiffure, Brushing & Curly</p>
+                        <p class="text-sm text-espresso-light leading-relaxed mb-5" data-i18n="role_amina_desc">
+                            Plébiscitée pour ses brushings souples qui tiennent longtemps, ses boucles curly définies et ses chignons élégants réalisés avec une patience remarquable.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-peach-100 flex items-center justify-between">
+                        <span class="text-xs text-espresso-muted italic">« Brushings qui tiennent longtemps »</span>
+                        <button onclick="bookWithSpecialist('Amina')" class="text-xs font-bold text-peach-600 hover:text-espresso transition-colors" data-i18n="book_with">Réserver →</button>
+                    </div>
+                </div>
+
+                <!-- Team Member 3: Ghita -->
+                <div class="group bg-white rounded-3xl p-7 border border-peach-200/80 shadow-card hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-peach-300 to-peach-500 text-white flex items-center justify-center font-editorial text-3xl font-bold shadow-soft">
+                                G
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-peach-100 text-peach-600 text-[11px] font-semibold" data-i18n="role_ghita_badge">Nail Artist</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-espresso mb-1">Ghita</h3>
+                        <p class="text-xs font-semibold text-champagne-dark uppercase tracking-wider mb-3" data-i18n="role_ghita_title">Prothésiste Ongulaire & Soins des Mains</p>
+                        <p class="text-sm text-espresso-light leading-relaxed mb-5" data-i18n="role_ghita_desc">
+                            Recommandée par les Local Guides de Fès pour la précision de sa manucure, la douceur de ses soins pédicure et la finesse de ses poses gel et nail art.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-peach-100 flex items-center justify-between">
+                        <span class="text-xs text-espresso-muted italic">« Je vous conseille sa manucure ! »</span>
+                        <button onclick="bookWithSpecialist('Ghita')" class="text-xs font-bold text-peach-600 hover:text-espresso transition-colors" data-i18n="book_with">Réserver →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== AUTHENTIC GOOGLE REVIEWS SHOWCASE ==================== -->
+    <section id="avis" class="py-20 bg-peach-100/55 border-y border-peach-200/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header & Google Rating Summary -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+                <div class="space-y-3">
+                    <span class="inline-block text-xs font-bold uppercase tracking-[0.22em] text-peach-600" data-i18n="rev_eyebrow">Avis Vérifiés Google</span>
+                    <h2 class="text-3xl sm:text-5xl font-semibold text-espresso" data-i18n="rev_title">Ce que disent nos clientes</h2>
+                    <p class="text-sm sm:text-base text-espresso-light max-w-xl" data-i18n="rev_subtitle">
+                        Découvrez les témoignages authentiques de nos mariées et clientes régulières à Fès, accompagnés des réponses de notre équipe.
+                    </p>
+                </div>
+
+                <!-- Google Score Card -->
+                <div class="bg-white rounded-3xl p-5 border border-peach-200 shadow-card flex items-center gap-4 self-start lg:self-auto">
+                    <div class="w-12 h-12 rounded-2xl bg-peach-50 border border-peach-200 flex items-center justify-center shrink-0">
+                        <!-- Google 'G' Multi-color SVG -->
+                        <svg class="w-6 h-6" viewBox="0 0 24 24">
+                            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.11-6.72-4.96H1.29v3.14C3.26 21.3 7.31 24 12 24z"/>
+                            <path fill="#FBBC05" d="M5.28 14.24c-.24-.72-.38-1.49-.38-2.24s.14-1.52.38-2.24V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.99-3.14z"/>
+                            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.99 3.14c.95-2.85 3.6-4.96 6.72-4.96z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-editorial text-3xl font-bold text-espresso">4.8</span>
+                            <span class="text-champagne text-base tracking-wider">★★★★★</span>
+                        </div>
+                        <p class="text-xs text-espresso-muted" data-i18n="rev_google_label">Basé sur les avis Google • Peachy Salon Fès</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Filter Pills -->
+            <div class="flex flex-wrap items-center gap-2 mb-8">
+                <button onclick="filterReviews('all')" data-rev-cat="all" class="rev-pill active px-4 py-2 rounded-full text-xs font-semibold bg-espresso text-white transition-all" data-i18n="rev_filter_all">Tous (12)</button>
+                <button onclick="filterReviews('bridal')" data-rev-cat="bridal" class="rev-pill px-4 py-2 rounded-full text-xs font-semibold bg-white text-espresso border border-peach-200 hover:bg-peach-100 transition-all" data-i18n="rev_filter_bridal">Mariage & Maquillage</button>
+                <button onclick="filterReviews('hair')" data-rev-cat="hair" class="rev-pill px-4 py-2 rounded-full text-xs font-semibold bg-white text-espresso border border-peach-200 hover:bg-peach-100 transition-all" data-i18n="rev_filter_hair">Coiffure & Brushing</button>
+                <button onclick="filterReviews('nails')" data-rev-cat="nails" class="rev-pill px-4 py-2 rounded-full text-xs font-semibold bg-white text-espresso border border-peach-200 hover:bg-peach-100 transition-all" data-i18n="rev_filter_nails">Manucure & Soins</button>
+            </div>
+
+            <!-- Reviews Masonry / Grid -->
+            <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Populated dynamically via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== INTERACTIVE BOOKING & INSTAGRAM DM BUILDER ==================== -->
+    <section id="reserver" class="py-20 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-[2.5rem] border border-peach-200 shadow-soft overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12">
+                    
+                    <!-- Left Form Column -->
+                    <div class="lg:col-span-7 p-7 sm:p-11">
+                        <span class="inline-block text-xs font-bold uppercase tracking-[0.22em] text-peach-600 mb-2" data-i18n="book_eyebrow">Rendez-vous & Devis Mariée</span>
+                        <h2 class="text-3xl sm:text-4xl font-semibold text-espresso mb-2" data-i18n="book_title">Réservez votre moment beauté</h2>
+                        <p class="text-sm text-espresso-light mb-7" data-i18n="book_subtitle">
+                            Composez votre séance sur-mesure et envoyez votre demande directement par Instagram DM ou confirmez en ligne.
+                        </p>
+
+                        <form id="booking-form" onsubmit="handleBookingSubmit(event)" class="space-y-5">
+                            <!-- Selected Services Checkboxes -->
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-espresso mb-2.5" data-i18n="book_label_services">1. Prestations souhaitées</label>
+                                <div id="booking-services-chips" class="flex flex-wrap gap-2">
+                                    <!-- Interactive Toggle Chips populated via JS -->
+                                </div>
+                            </div>
+
+                            <!-- Specialist Choice -->
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-espresso mb-2" data-i18n="book_label_specialist">2. Spécialiste préférée</label>
+                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                                    <button type="button" onclick="selectSpecialist('Peu importe')" data-spec="Peu importe" class="spec-btn active py-2.5 px-3 rounded-xl text-xs font-semibold border border-espresso bg-espresso text-white transition-all" data-i18n="spec_any">Peu importe</button>
+                                    <button type="button" onclick="selectSpecialist('Khaoula')" data-spec="Khaoula" class="spec-btn py-2.5 px-3 rounded-xl text-xs font-semibold border border-peach-200 bg-peach-50 text-espresso hover:bg-peach-100 transition-all">Khaoula (MUA)</button>
+                                    <button type="button" onclick="selectSpecialist('Amina')" data-spec="Amina" class="spec-btn py-2.5 px-3 rounded-xl text-xs font-semibold border border-peach-200 bg-peach-50 text-espresso hover:bg-peach-100 transition-all">Amina (Coiffure)</button>
+                                    <button type="button" onclick="selectSpecialist('Ghita')" data-spec="Ghita" class="spec-btn py-2.5 px-3 rounded-xl text-xs font-semibold border border-peach-200 bg-peach-50 text-espresso hover:bg-peach-100 transition-all">Ghita (Ongles)</button>
+                                </div>
+                            </div>
+
+                            <!-- Date & Time Slot -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="book-date" class="block text-xs font-bold uppercase tracking-wider text-espresso mb-1.5" data-i18n="book_label_date">3. Date souhaitée</label>
+                                    <input type="date" id="book-date" oninput="updateMessagePreview()" required class="w-full px-4 py-3 rounded-xl bg-peach-50 border border-peach-200 text-sm text-espresso focus:outline-none focus:border-peach-500">
+                                </div>
+                                <div>
+                                    <label for="book-time" class="block text-xs font-bold uppercase tracking-wider text-espresso mb-1.5" data-i18n="book_label_time">Créneau horaire</label>
+                                    <select id="book-time" onchange="updateMessagePreview()" class="w-full px-4 py-3 rounded-xl bg-peach-50 border border-peach-200 text-sm text-espresso focus:outline-none focus:border-peach-500">
+                                        <option value="10h00">10h00 (Matin)</option>
+                                        <option value="11h30">11h30</option>
+                                        <option value="14h00" selected>14h00 (Après-midi)</option>
+                                        <option value="16h00">16h00</option>
+                                        <option value="18h00">18h00 (Fin de journée)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Client Name & Phone -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="book-name" class="block text-xs font-bold uppercase tracking-wider text-espresso mb-1.5" data-i18n="book_label_name">4. Votre Prénom & Nom</label>
+                                    <input type="text" id="book-name" oninput="updateMessagePreview()" placeholder="Ex: Salma Benali" required class="w-full px-4 py-3 rounded-xl bg-peach-50 border border-peach-200 text-sm text-espresso placeholder:text-espresso-muted/60 focus:outline-none focus:border-peach-500">
+                                </div>
+                                <div>
+                                    <label for="book-phone" class="block text-xs font-bold uppercase tracking-wider text-espresso mb-1.5" data-i18n="book_label_phone">Téléphone (Maroc)</label>
+                                    <input type="tel" id="book-phone" oninput="updateMessagePreview()" placeholder="06 XX XX XX XX" required class="w-full px-4 py-3 rounded-xl bg-peach-50 border border-peach-200 text-sm text-espresso placeholder:text-espresso-muted/60 focus:outline-none focus:border-peach-500">
+                                </div>
+                            </div>
+
+                            <!-- Submit Buttons -->
+                            <div class="pt-3 flex flex-col sm:flex-row gap-3">
+                                <button type="submit" class="flex-1 py-4 px-6 rounded-full bg-espresso text-white font-semibold text-sm hover:bg-peach-600 transition-all shadow-card flex items-center justify-center gap-2">
+                                    <span data-i18n="book_btn_confirm">Confirmer ma demande en ligne</span>
+                                </button>
+                                <a href="https://www.instagram.com/peachy.salon/" target="_blank" rel="noopener noreferrer" onclick="copyBookingMessage(true)" class="py-4 px-6 rounded-full bg-gradient-to-r from-peach-400 to-peach-500 text-white font-semibold text-sm hover:opacity-95 transition-all shadow-soft flex items-center justify-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                    <span data-i18n="book_btn_insta">Envoyer via Instagram DM</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Right Live Message Preview Column -->
+                    <div class="lg:col-span-5 bg-gradient-to-br from-peach-100 via-peach-200/70 to-peach-100 p-7 sm:p-11 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-peach-200">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-bold uppercase tracking-wider text-peach-600" data-i18n="preview_badge">Aperçu du message DM</span>
+                                <button type="button" onclick="copyBookingMessage(false)" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white text-espresso text-xs font-semibold border border-peach-300 hover:bg-peach-50 transition-all shadow-sm">
+                                    <svg class="w-3.5 h-3.5 text-peach-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                                    <span id="copy-btn-text" data-i18n="preview_copy">Copier</span>
+                                </button>
+                            </div>
+
+                            <!-- Simulated Instagram DM Bubble -->
+                            <div class="bg-white rounded-3xl p-5 shadow-card border border-peach-200/80 space-y-3">
+                                <div class="flex items-center gap-2.5 pb-3 border-b border-peach-100">
+                                    <div class="w-8 h-8 rounded-full bg-peach-500 text-white flex items-center justify-center font-editorial font-bold text-sm">P</div>
+                                    <div>
+                                        <p class="text-xs font-bold text-espresso">peachy.salon</p>
+                                        <p class="text-[10px] text-espresso-muted">Instagram Direct • Fès</p>
+                                    </div>
+                                </div>
+                                <pre id="dm-preview-text" class="whitespace-pre-wrap font-sans text-xs sm:text-[13px] text-espresso-light leading-relaxed"></pre>
+                            </div>
+                        </div>
+
+                        <!-- Salon Info Box -->
+                        <div class="mt-8 pt-6 border-t border-peach-300/60 space-y-2.5 text-xs text-espresso-light">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                                <span class="font-semibold text-espresso" data-i18n="hours_label">Ouvert Mardi – Dimanche : 10h00 – 20h00</span>
+                            </div>
+                            <p data-i18n="bridal_note">✨ Forfaits Mariée sur-mesure : essai maquillage & coiffure inclus sur rendez-vous avec Khaoula.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-espresso text-peach-100 pt-16 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-white/10">
+                <!-- Col 1: Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-peach-400 text-espresso flex items-center justify-center font-editorial font-bold text-xl">P</div>
+                        <span class="font-editorial text-2xl font-bold text-white">Peachy Salon</span>
+                    </div>
+                    <p class="text-sm text-peach-200/80 leading-relaxed max-w-sm" data-i18n="footer_desc">
+                        Votre adresse beauté de référence à Fès. Maquillage mariée et invitée, coiffure, brushing longue tenue, manucure et soins esthétiques dans une atmosphère chaleureuse.
+                    </p>
+                    <a href="https://www.instagram.com/peachy.salon/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-peach-500 text-white text-xs font-semibold transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <span>@peachy.salon</span>
+                    </a>
+                </div>
+
+                <!-- Col 2: Location & Hours -->
+                <div class="space-y-3 text-sm">
+                    <h4 class="font-editorial text-xl font-semibold text-white" data-i18n="footer_loc_title">Adresse & Horaires</h4>
+                    <p class="text-peach-200/85">📍 Fès, Maroc</p>
+                    <p class="text-peach-200/85" data-i18n="footer_hours">🕒 Mardi – Dimanche : 10h00 – 20h00 (Fermé le Lundi)</p>
+                    <p class="text-xs text-peach-300/80 pt-1" data-i18n="footer_promise">
+                        Engagement qualité : Tarifs transparents identiques pour toutes nos clientes & protocoles d'hygiène rigoureux.
+                    </p>
+                </div>
+
+                <!-- Col 3: Quick Links -->
+                <div class="space-y-3 text-sm">
+                    <h4 class="font-editorial text-xl font-semibold text-white" data-i18n="footer_links_title">Navigation</h4>
+                    <ul class="space-y-2 text-peach-200/80">
+                        <li><a href="#services" class="hover:text-white transition-colors" data-i18n="nav_services">Services & Tarifs</a></li>
+                        <li><a href="#equipe" class="hover:text-white transition-colors" data-i18n="nav_team">L'Équipe (Khaoula, Amina, Ghita)</a></li>
+                        <li><a href="#avis" class="hover:text-white transition-colors" data-i18n="nav_reviews">Avis Clients Google (4.8 ★)</a></li>
+                        <li><a href="#reserver" class="hover:text-white transition-colors" data-i18n="nav_book">Prendre Rendez-vous</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-peach-200/60">
+                <p>© 2026 Peachy Salon Fès. Tous droits réservés.</p>
+                <p>Sublimez votre beauté naturelle • @peachy.salon</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== CONFIRMATION MODAL (No alert() used!) ==================== -->
+    <div id="confirmation-modal" class="hidden fixed inset-0 z-50 bg-espresso/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-7 sm:p-8 border border-peach-200 shadow-2xl text-center space-y-4 fade-in">
+            <div class="w-16 h-16 rounded-full bg-peach-100 text-peach-600 flex items-center justify-center mx-auto text-3xl">
+                ✨
+            </div>
+            <h3 class="font-editorial text-3xl font-bold text-espresso" data-i18n="modal_title">Demande enregistrée !</h3>
+            <p class="text-sm text-espresso-light leading-relaxed" id="modal-summary-text"></p>
+            <div class="pt-2 flex flex-col gap-2.5">
+                <a href="https://www.instagram.com/peachy.salon/" target="_blank" rel="noopener noreferrer" onclick="copyBookingMessage(false)" class="w-full py-3.5 px-5 rounded-full bg-gradient-to-r from-peach-500 to-peach-600 text-white text-xs font-semibold shadow-soft hover:opacity-95 transition-all" data-i18n="modal_insta_btn">
+                    Ouvrir Instagram (@peachy.salon) pour confirmer
+                </a>
+                <button onclick="closeModal()" class="w-full py-3 px-5 rounded-full bg-peach-100 text-espresso text-xs font-semibold hover:bg-peach-200 transition-colors" data-i18n="modal_close">
+                    Fermer
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST NOTIFICATION ==================== -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 hidden bg-espresso text-white px-5 py-3 rounded-2xl shadow-xl text-xs font-semibold flex items-center gap-2.5 fade-in">
+        <span class="w-2 h-2 rounded-full bg-peach-400"></span>
+        <span id="toast-msg">Message copié !</span>
+    </div>
+
+    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+    <script>
+        // Current Language State ('fr' default)
+        let currentLang = 'fr';
+        let activeServiceCategory = 'makeup';
+        let activeReviewCategory = 'all';
+        let selectedServices = ['Maquillage Invitée / Soirée'];
+        let selectedSpecialist = 'Peu importe';
+
+        // Translations Dictionary
+        const i18n = {
+            fr: {
+                nav_services: "Services",
+                nav_team: "Équipe",
+                nav_reviews: "Avis Clients",
+                nav_pricing: "Tarifs & Devis",
+                nav_book: "Réserver",
+                nav_cta: "Prendre Rendez-vous",
+                hero_badge: "sur Google • Recommandé par nos mariées et clientes à Fès",
+                hero_title: "Sublimez votre beauté naturelle au cœur de Fès",
+                hero_subtitle: "De la mise en beauté de mariée sur-mesure aux brushings longue tenue et soins d'onglerie raffinés : Khaoula, Amina et Ghita vous accueillent dans un écrin chaleureux, propre et bienveillant.",
+                hero_cta_primary: "Réserver une séance",
+                hero_cta_secondary: "Découvrir nos services",
+                stat_1: "Tarifs fixes & transparents",
+                stat_2: "Protocoles stricts & matériel stérilisé",
+                stat_3: "Accompagnement Mariées & Soins",
+                float_1_title: "Mariée & Invitée",
+                float_1_sub: "Maquillage par Khaoula",
+                float_2_title: "Manucure & Nail Art",
+                float_2_sub: "Finitions par Ghita",
+                float_3_title: "Brushing & Curly",
+                float_3_sub: "Tenue impeccable • Amina",
+                srv_eyebrow: "Carte des Prestations & Tarifs Transparents",
+                srv_title: "Nos Soins & Mises en Beauté",
+                srv_subtitle: "Chez Peachy Salon, nos tarifs sont fixes, affichés et identiques pour toutes nos clientes. Sélectionnez vos prestations pour préparer votre rendez-vous.",
+                cat_makeup: "Maquillage & Mariée",
+                cat_hair: "Coiffure & Soins Capillaires",
+                cat_nails: "Onglerie (Manucure & Pédicure)",
+                cat_beauty: "Esthétique & Épilation",
+                sel_bar_title: "Prestation(s) sélectionnée(s) pour votre rendez-vous",
+                sel_bar_cta: "Finaliser ma réservation ↓",
+                team_eyebrow: "Savoir-Faire & Bienveillance",
+                team_title: "L'Équipe Peachy Salon",
+                team_subtitle: "Saluées dans les avis de nos clientes pour leur écoute, leur patience et leur talent artistique.",
+                role_khaoula_badge: "Fondatrice & MUA",
+                role_khaoula_title: "Maquilleuse Principale & Spécialiste Mariées",
+                role_khaoula_desc: "Reconnue par ses mariées pour sa présence rassurante du début à la fin, son écoute attentive et ses mises en beauté lumineuses qui subliment chaque visage.",
+                role_amina_badge: "Hair Stylist",
+                role_amina_title: "Experte Coiffure, Brushing & Curly",
+                role_amina_desc: "Plébiscitée pour ses brushings souples qui tiennent longtemps, ses boucles curly définies et ses chignons élégants réalisés avec une patience remarquable.",
+                role_ghita_badge: "Nail Artist",
+                role_ghita_title: "Prothésiste Ongulaire & Soins des Mains",
+                role_ghita_desc: "Recommandée par les Local Guides de Fès pour la précision de sa manucure, la douceur de ses soins pédicure et la finesse de ses poses gel et nail art.",
+                book_with: "Réserver →",
+                rev_eyebrow: "Avis Vérifiés Google",
+                rev_title: "Ce que disent nos clientes",
+                rev_subtitle: "Découvrez les témoignages authentiques de nos mariées et clientes régulières à Fès, accompagnés des réponses de notre équipe.",
+                rev_google_label: "Basé sur les avis Google • Peachy Salon Fès",
+                rev_filter_all: "Tous (12)",
+                rev_filter_bridal: "Mariage & Maquillage",
+                rev_filter_hair: "Coiffure & Brushing",
+                rev_filter_nails: "Manucure & Soins",
+                book_eyebrow: "Rendez-vous & Devis Mariée",
+                book_title: "Réservez votre moment beauté",
+                book_subtitle: "Composez votre séance sur-mesure et envoyez votre demande directement par Instagram DM ou confirmez en ligne.",
+                book_label_services: "1. Prestations souhaitées",
+                book_label_specialist: "2. Spécialiste préférée",
+                spec_any: "Peu importe",
+                book_label_date: "3. Date souhaitée",
+                book_label_time: "Créneau horaire",
+                book_label_name: "4. Votre Prénom & Nom",
+                book_label_phone: "Téléphone (Maroc)",
+                book_btn_confirm: "Confirmer ma demande en ligne",
+                book_btn_insta: "Envoyer via Instagram DM",
+                preview_badge: "Aperçu du message DM",
+                preview_copy: "Copier",
+                hours_label: "Ouvert Mardi – Dimanche : 10h00 – 20h00",
+                bridal_note: "✨ Forfaits Mariée sur-mesure : essai maquillage & coiffure inclus sur rendez-vous avec Khaoula.",
+                footer_desc: "Votre adresse beauté de référence à Fès. Maquillage mariée et invitée, coiffure, brushing longue tenue, manucure et soins esthétiques dans une atmosphère chaleureuse.",
+                footer_loc_title: "Adresse & Horaires",
+                footer_hours: "🕒 Mardi – Dimanche : 10h00 – 20h00 (Fermé le Lundi)",
+                footer_promise: "Engagement qualité : Tarifs transparents identiques pour toutes nos clientes & protocoles d'hygiène rigoureux.",
+                footer_links_title: "Navigation",
+                modal_title: "Demande enregistrée !",
+                modal_insta_btn: "Ouvrir Instagram (@peachy.salon) pour confirmer",
+                modal_close: "Fermer",
+                add_btn: "+ Ajouter à ma réservation",
+                added_btn: "✓ Ajouté à ma réservation",
+                owner_reply_show: "Voir la réponse de Peachy Salon",
+                owner_reply_hide: "Masquer la réponse"
+            },
+            en: {
+                nav_services: "Services",
+                nav_team: "Team",
+                nav_reviews: "Client Reviews",
+                nav_pricing: "Pricing & Quotes",
+                nav_book: "Book Now",
+                nav_cta: "Book Appointment",
+                hero_badge: "on Google • Recommended by brides & clients in Fès",
+                hero_title: "Enhance your natural beauty in the heart of Fès",
+                hero_subtitle: "From bespoke bridal glam to long-lasting blowouts and refined nail artistry: Khaoula, Amina, and Ghita welcome you into a warm, spotless, and caring sanctuary.",
+                hero_cta_primary: "Book a Session",
+                hero_cta_secondary: "Explore Services",
+                stat_1: "Fixed & transparent pricing",
+                stat_2: "Strict hygiene & sterilized tools",
+                stat_3: "Bridal Styling & Beauty Care",
+                float_1_title: "Bridal & Guest Glam",
+                float_1_sub: "Makeup by Khaoula",
+                float_2_title: "Manicure & Nail Art",
+                float_2_sub: "Precision by Ghita",
+                float_3_title: "Blowout & Curly Hair",
+                float_3_sub: "Long-lasting hold • Amina",
+                srv_eyebrow: "Service Menu & Transparent Pricing",
+                srv_title: "Beauty Treatments & Styling",
+                srv_subtitle: "At Peachy Salon, all prices are fixed, transparent, and identical for every client. Select your treatments below to build your booking.",
+                cat_makeup: "Makeup & Bridal",
+                cat_hair: "Hair & Styling Care",
+                cat_nails: "Nails (Manicure & Pedicure)",
+                cat_beauty: "Esthetics & Waxing",
+                sel_bar_title: "Service(s) selected for your appointment",
+                sel_bar_cta: "Complete my booking ↓",
+                team_eyebrow: "Craftsmanship & Warmth",
+                team_title: "Meet the Peachy Team",
+                team_subtitle: "Praised in our client reviews for their attentiveness, patience, and artistic talent.",
+                role_khaoula_badge: "Founder & Lead MUA",
+                role_khaoula_title: "Lead Makeup Artist & Bridal Specialist",
+                role_khaoula_desc: "Celebrated by brides for her calming presence from start to finish, attentive listening, and radiant looks tailored to each client's features.",
+                role_amina_badge: "Hair Stylist",
+                role_amina_title: "Blowout, Updo & Curly Hair Expert",
+                role_amina_desc: "Loved for bouncy blowouts that last for days, defined curly styling, and elegant bridal updos crafted with endless patience.",
+                role_ghita_badge: "Nail Artist",
+                role_ghita_title: "Nail Technician & Hand Care Specialist",
+                role_ghita_desc: "Recommended by Fès Local Guides for her immaculate manicures, relaxing spa pedicures, and delicate gel & nail art finishes.",
+                book_with: "Book →",
+                rev_eyebrow: "Verified Google Reviews",
+                rev_title: "What Our Clients Say",
+                rev_subtitle: "Read authentic stories from our brides and loyal clients in Fès, along with personal replies from our team.",
+                rev_google_label: "Based on Google Reviews • Peachy Salon Fès",
+                rev_filter_all: "All (12)",
+                rev_filter_bridal: "Bridal & Makeup",
+                rev_filter_hair: "Hair & Blowout",
+                rev_filter_nails: "Nails & Care",
+                book_eyebrow: "Appointments & Bridal Quotes",
+                book_title: "Reserve your beauty session",
+                book_subtitle: "Customize your treatments and send your booking request directly via Instagram DM or confirm online.",
+                book_label_services: "1. Desired Services",
+                book_label_specialist: "2. Preferred Specialist",
+                spec_any: "Any available",
+                book_label_date: "3. Preferred Date",
+                book_label_time: "Time Slot",
+                book_label_name: "4. Your Full Name",
+                book_label_phone: "Phone Number (Morocco)",
+                book_btn_confirm: "Confirm Online Request",
+                book_btn_insta: "Send via Instagram DM",
+                preview_badge: "Live DM Message Preview",
+                preview_copy: "Copy",
+                hours_label: "Open Tuesday – Sunday: 10:00 AM – 8:00 PM",
+                bridal_note: "✨ Custom Bridal Packages: makeup & hair trial included by appointment with Khaoula.",
+                footer_desc: "Your premier beauty destination in Fès. Bridal & guest makeup, hair styling, long-lasting blowouts, manicure, and esthetics in a warm atmosphere.",
+                footer_loc_title: "Location & Hours",
+                footer_hours: "🕒 Tuesday – Sunday: 10:00 AM – 8:00 PM (Closed Mondays)",
+                footer_promise: "Quality Commitment: Transparent pricing identical for all clients & rigorous hygiene standards.",
+                footer_links_title: "Navigation",
+                modal_title: "Request Saved!",
+                modal_insta_btn: "Open Instagram (@peachy.salon) to confirm",
+                modal_close: "Close",
+                add_btn: "+ Add to my booking",
+                added_btn: "✓ Added to booking",
+                owner_reply_show: "View Peachy Salon's reply",
+                owner_reply_hide: "Hide reply"
+            }
+        };
+
+        // Services Data (with realistic Fès MAD pricing reflecting review mentions)
+        const servicesData = [
+            // Makeup & Bridal
+            {
+                id: 'm1',
+                category: 'makeup',
+                title_fr: 'Maquillage Mariée Complet',
+                title_en: 'Complete Bridal Makeup Package',
+                price: 'Sur Devis (Essai inclus)',
+                specialist: 'Khaoula',
+                desc_fr: 'Accompagnement personnalisé par Khaoula du début à la fin, préparation de peau éclat, tenue longue durée et pose de cils.',
+                desc_en: 'Full bridal accompaniment by Khaoula from start to finish, radiant skin prep, long-wear finish, and lashes.'
+            },
+            {
+                id: 'm2',
+                category: 'makeup',
+                title_fr: 'Maquillage Invitée / Soirée',
+                title_en: 'Event & Guest Glam Makeup',
+                price: '250 – 350 MAD',
+                specialist: 'Khaoula',
+                desc_fr: 'Mise en beauté sophistiquée ou glamour adaptée à votre tenue de cérémonie, réalisée avec des produits haute tenue.',
+                desc_en: 'Sophisticated or glamorous evening look tailored to your celebration outfit using high-longevity products.'
+            },
+            {
+                id: 'm3',
+                category: 'makeup',
+                title_fr: 'Maquillage Jour / Naturel Glow',
+                title_en: 'Natural Daytime Glow Makeup',
+                price: '200 MAD',
+                specialist: 'Khaoula',
+                desc_fr: 'Teint frais, lumineux et naturel pour un déjeuner, un shooting ou une occasion spéciale en journée.',
+                desc_en: 'Fresh, luminous, and effortless complexion for daytime gatherings, photoshoots, or special occasions.'
+            },
+            // Hair & Styling
+            {
+                id: 'h1',
+                category: 'hair',
+                title_fr: 'Brushing & Coiffage Longue Tenue',
+                title_en: 'Long-Lasting Blowout & Styling',
+                price: '100 – 150 MAD',
+                specialist: 'Amina',
+                desc_fr: 'Brushing lisse, souple ou wavy réalisé par Amina pour une brillance miroir et une tenue impeccable.',
+                desc_en: 'Sleek, bouncy, or wavy blowout crafted by Amina for mirror shine and lasting volume.'
+            },
+            {
+                id: 'h2',
+                category: 'hair',
+                title_fr: 'Coiffure Mariée / Chignon & Attaches',
+                title_en: 'Bridal Updo & Evening Hairstyles',
+                price: '300 – 600 MAD',
+                specialist: 'Amina',
+                desc_fr: 'Chignons bas romantiques, attaches bohèmes ou coiffures de soirée structurées selon la morphologie de votre visage.',
+                desc_en: 'Romantic low buns, bohemian updos, or structured evening hairstyles tailored to complement your features.'
+            },
+            {
+                id: 'h3',
+                category: 'hair',
+                title_fr: 'Coiffage Curly, Tresses & Lissage',
+                title_en: 'Curly Styling, Braids & Keratin Smoothing',
+                price: '150 – 800 MAD',
+                specialist: 'Amina',
+                desc_fr: 'Définition de boucles curly naturelles, tresses artistiques ou soins lissants profonds nourrissants.',
+                desc_en: 'Natural curl definition, artistic braiding, or deep nourishing smoothing treatments.'
+            },
+            // Nails
+            {
+                id: 'n1',
+                category: 'nails',
+                title_fr: 'Manucure Classique & Semi-Permanent',
+                title_en: 'Classic & Gel Polish Manicure',
+                price: '100 – 150 MAD',
+                specialist: 'Ghita',
+                desc_fr: 'Soin complet des cuticules, limage soigné et pose de vernis classique ou semi-permanent haute brillance par Ghita.',
+                desc_en: 'Complete cuticle care, precise shaping, and high-gloss regular or gel polish application by Ghita.'
+            },
+            {
+                id: 'n2',
+                category: 'nails',
+                title_fr: 'Pédicure Spa & Beauté des Pieds',
+                title_en: 'Spa Pedicure & Foot Care',
+                price: '150 – 200 MAD',
+                specialist: 'Ghita',
+                desc_fr: 'Bain relaxant, gommage doux, soin des talons et pose de vernis pour des pieds impeccables.',
+                desc_en: 'Relaxing soak, gentle exfoliation, heel care, and polish application for immaculate feet.'
+            },
+            {
+                id: 'n3',
+                category: 'nails',
+                title_fr: 'Nail Art & Pose Gel Sur-Mesure',
+                title_en: 'Custom Nail Art & Gel Extensions',
+                price: '200 – 300 MAD',
+                specialist: 'Ghita',
+                desc_fr: 'French manucure moderne, babyboomer, effet chrome ou extensions gel délicates avec matériel stérilisé.',
+                desc_en: 'Modern French tips, babyboomer, chrome glaze, or delicate gel extensions using sterilized instruments.'
+            },
+            // Beauty & Waxing
+            {
+                id: 'b1',
+                category: 'beauty',
+                title_fr: 'Épilation à la Cire Douce',
+                title_en: 'Gentle Waxing Services',
+                price: '50 – 180 MAD',
+                specialist: 'Équipe Peachy',
+                desc_fr: 'Épilation visage, sourcils, bras ou jambes réalisée avec des cires respectueuses des peaux sensibles.',
+                desc_en: 'Facial, brow, arm, or leg waxing performed with gentle waxes suited for sensitive skin.'
+            },
+            {
+                id: 'b2',
+                category: 'beauty',
+                title_fr: 'Soin du Visage Éclat Peachy',
+                title_en: 'Peachy Radiance Facial',
+                price: '250 MAD',
+                specialist: 'Khaoula',
+                desc_fr: 'Nettoyage en profondeur, hydratation intense et massage facial pour préparer la peau avant un événement.',
+                desc_en: 'Deep cleansing, intense hydration, and facial massage to prep skin for a radiant event glow.'
+            },
+            {
+                id: 'b3',
+                category: 'beauty',
+                title_fr: 'Beauté du Regard & Restructuration Sourcils',
+                title_en: 'Brow Shaping & Eye Enhancement',
+                price: '80 – 150 MAD',
+                specialist: 'Khaoula',
+                desc_fr: 'Restructuration harmonieuse de la ligne des sourcils et mise en valeur naturelle du regard.',
+                desc_en: 'Harmonious brow shaping and natural eye-framing enhancements.'
+            }
+        ];
+
+        // Authentic Google Reviews Data
+        const reviewsData = [
+            {
+                id: 'r1',
+                author: 'Meryeme EL KADI',
+                badge: '5 avis • 4 photos',
+                date: 'Il y a 3 mois',
+                category: 'bridal',
+                text: "Merci beaucoup ma belle khaoula ❤️✨ Un immense merci pour ton professionnalisme, ta gentillesse et ton talent. Tu étais présente à mes côtés du début à la fin, avec une attention incroyable à chaque détail.",
+                reply: "Merci du fond du cœur ma belle 🥹❤️ Tes mots m’ont vraiment touchée. C’était un immense plaisir d’être à tes côtés pour cette belle journée et de partager ces moments avec toi. 🥰✨"
+            },
+            {
+                id: 'r2',
+                author: 'Cliente Mariée',
+                badge: 'Avis vérifié Google',
+                date: 'Il y a 2 mois',
+                category: 'bridal',
+                text: "Merci beaucoup khaoula pour tout ce que tu as fait pour moi le jour de mon mariage ❤️ Vraiment, ton travail était magnifique😍, Tu m’as vraiment sublimée, je me suis sentie trop belle 🥹❤️ tu as parfaitement compris ce que je voulais.",
+                reply: "Au nom de toute l'équipe de Peachy Salon et de Khaoula, un immense merci pour ce magnifique message qui nous va droit au cœur 🥹✨ Tu étais une mariée tout simplement radieuse !"
+            },
+            {
+                id: 'r3',
+                author: 'Zineb ELQABLI',
+                badge: '2 avis • 6 photos',
+                date: 'Il y a 2 mois',
+                category: 'bridal',
+                text: "Toute l'équipe kant ghzala et pro : ghita sawbat lia dfari fnin, amina sawbat lia curly. Les deux 3ndhom wa7ed lkhater ya salam allah yhfdhom. Et khaoula c une personne qui aime son metier, dart lia makeup et mchita zwinin bzf jit comme une princesse f mon jour. Une adresse à recommander❤️",
+                reply: "Merci infiniment pour ces si beaux mots 🥹❤️ Ça nous fait énormément plaisir ! Toute l’équipe est ravie d’avoir contribué à rendre votre journée encore plus spéciale. Votre confiance nous touche beaucoup 🤍✨"
+            },
+            {
+                id: 'r4',
+                author: 'Kaoutar Kilani',
+                badge: '2 avis',
+                date: 'Il y a 3 mois',
+                category: 'bridal',
+                text: "Je recommande le salon Peachy les yeux fermés ! ❤️ Je vais chez elle depuis longtemps et je lui confie vraiment tout : coiffure, maquillage, épilation, soins… et toujours avec le même résultat : je repars ravie.",
+                reply: "Merci infiniment pour ce magnifique témoignage ❤️🥹 Ça nous touche énormément ! C’est un vrai bonheur de t’accompagner depuis tout ce temps et encore plus d’avoir pu être à tes côtés pour ton mariage."
+            },
+            {
+                id: 'r5',
+                author: 'Sara Bieber',
+                badge: '2 avis',
+                date: 'Il y a 3 mois',
+                category: 'nails',
+                text: "Très belle expérience chez Khaoula ❤️. J'ai fait une manucure et une pédicure, le résultat est impeccable. Le salon est propre, l'accueil est chaleureux et on sent que chaque détail compte. Je reviendrai avec grand plaisir.",
+                reply: "Merci infiniment pour ce magnifique retour ❤️🥰 Ça nous fait énormément plaisir de savoir que vous avez apprécié votre expérience chez Peachy ✨ Votre satisfaction est notre plus belle récompense."
+            },
+            {
+                id: 'r6',
+                author: 'safae Ben Abbou',
+                badge: '1 avis',
+                date: 'Il y a 2 mois',
+                category: 'hair',
+                text: "Excellent salon, bienveillance, énergie positive, très bon travail. Merci Amina pour les brushings qui tiennent longtemps. Merci peachy🥰",
+                reply: "Merci beaucoup Safae 🥰❤️ Votre satisfaction nous fait vraiment plaisir ! Merci pour votre confiance et pour ce joli retour. Au plaisir de vous revoir chez Peachy ✨"
+            },
+            {
+                id: 'r7',
+                author: 'Safa El fatihi',
+                badge: '2 avis',
+                date: 'Il y a 3 mois',
+                category: 'bridal',
+                text: "Que dire ? khaoula est une magnifique personne avec un grand cœur ! son équipe est top à 100% et très à l’écoute 😄",
+                reply: "Merci infiniment pour tes adorables mots 🥹❤️ Ça nous touche énormément ! C’était un réel plaisir de t’accompagner pour ton mariage et de partager ces moments."
+            },
+            {
+                id: 'r8',
+                author: 'Ekaterina Bascou',
+                badge: '1 avis • 4 photos',
+                date: 'Il y a un an',
+                category: 'bridal',
+                text: "I had an amazing experience doing hair and makeup at Peachy Salon! The salon was clean, organized, and welcoming, with super friendly and helpful staff. They offered plenty of options for both makeup and hair styling.",
+                reply: "Thank you for this comment! And we are so happy that you were satisfied with our work. Hope to see you again 😇❤️"
+            },
+            {
+                id: 'r9',
+                author: 'Hajar Zeroual',
+                badge: '5 avis',
+                date: 'Il y a un an',
+                category: 'bridal',
+                text: "Un grand merci à Khaoula et à toute son équipe pour leur bienveillance, leur gentillesse et leur professionnalisme. Makeup invitée top du top réalisé avec beaucoup de talent.",
+                reply: "Merci beaucoup pour ce message chaleureux ! Cela a été un véritable plaisir de vous accompagner, et je suis ravie que le maquillage ait répondu à vos attentes."
+            },
+            {
+                id: 'r10',
+                author: 'safae',
+                badge: 'Local Guide • 184 avis',
+                date: 'Il y a un an',
+                category: 'nails',
+                text: "Ghita est top du top, je vous conseille sa manicure ! Merci ghita 🫶🏼",
+                reply: "Merci beaucoup pour votre commentaire, et bienvenue ❤️"
+            },
+            {
+                id: 'r11',
+                author: 'Malak Malak',
+                badge: '2 avis',
+                date: 'Nouveau • Il y a une semaine',
+                category: 'hair',
+                text: "Bonne expérience • Prix : 100–150 MAD",
+                reply: "❤️❤️"
+            },
+            {
+                id: 'r12',
+                author: 'Chris Senn Delle Basa',
+                badge: '3 photos',
+                date: 'Il y a 7 mois',
+                category: 'hair',
+                text: "Services : Brushing — Professionnel, Nett und freundlich.",
+                reply: "You're always welcome ❤️"
+            }
+        ];
+
+        // ==================== RENDER FUNCTIONS ====================
+
+        function renderServices() {
+            const grid = document.getElementById('services-grid');
+            const filtered = servicesData.filter(s => s.category === activeServiceCategory);
+            
+            grid.innerHTML = filtered.map(srv => {
+                const title = currentLang === 'fr' ? srv.title_fr : srv.title_en;
+                const desc = currentLang === 'fr' ? srv.desc_fr : srv.desc_en;
+                const isSelected = selectedServices.includes(srv.title_fr);
+                const btnLabel = isSelected ? i18n[currentLang].added_btn : i18n[currentLang].add_btn;
+
+                return `
+                    <div class="fade-in bg-white rounded-3xl p-6 sm:p-7 border ${isSelected ? 'border-peach-500 ring-2 ring-peach-200' : 'border-peach-200/80'} shadow-card hover:shadow-soft transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-start justify-between gap-3 mb-3">
+                                <span class="px-3 py-1 rounded-full bg-peach-100 text-peach-600 text-[11px] font-bold">
+                                    ${srv.price}
+                                </span>
+                                <span class="text-xs font-medium text-espresso-muted">
+                                    ✨ ${srv.specialist}
+                                </span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-espresso mb-2">${title}</h3>
+                            <p class="text-sm text-espresso-light leading-relaxed mb-6">${desc}</p>
+                        </div>
+                        <button type="button" onclick="toggleServiceSelection('${srv.title_fr.replace(/'/g, "\\'")}')" class="w-full py-3 px-4 rounded-2xl text-xs font-semibold transition-all ${isSelected ? 'bg-peach-500 text-white shadow-soft' : 'bg-peach-50 text-espresso border border-peach-200 hover:bg-peach-100'}">
+                            ${btnLabel}
+                        </button>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderBookingChips() {
+            const container = document.getElementById('booking-services-chips');
+            container.innerHTML = servicesData.map(srv => {
+                const isSelected = selectedServices.includes(srv.title_fr);
+                const displayTitle = currentLang === 'fr' ? srv.title_fr : srv.title_en;
+                return `
+                    <button type="button" onclick="toggleServiceSelection('${srv.title_fr.replace(/'/g, "\\'")}')" class="px-3.5 py-2 rounded-full text-xs font-medium transition-all border ${isSelected ? 'bg-peach-500 text-white border-peach-500 shadow-sm' : 'bg-peach-50 text-espresso border-peach-200 hover:bg-peach-100'}">
+                        ${isSelected ? '✓ ' : '+ '}${displayTitle}
+                    </button>
+                `;
+            }).join('');
+
+            // Update Selection Floating Bar
+            const bar = document.getElementById('selection-bar');
+            const countEl = document.getElementById('selection-count');
+            const namesEl = document.getElementById('selection-names');
+
+            if (selectedServices.length > 0) {
+                bar.classList.remove('hidden');
+                countEl.textContent = selectedServices.length;
+                namesEl.textContent = selectedServices.join(' • ');
+            } else {
+                bar.classList.add('hidden');
+            }
+        }
+
+        function renderReviews() {
+            const grid = document.getElementById('reviews-grid');
+            const filtered = activeReviewCategory === 'all'
+                ? reviewsData
+                : reviewsData.filter(r => r.category === activeReviewCategory);
+
+            grid.innerHTML = filtered.map(rev => {
+                const initials = rev.author.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+                return `
+                    <div class="fade-in bg-white rounded-3xl p-6 border border-peach-200/80 shadow-card flex flex-col justify-between">
+                        <div>
+                            <!-- Reviewer Header -->
+                            <div class="flex items-center justify-between gap-3 mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-peach-200 to-peach-400 text-espresso font-bold text-xs flex items-center justify-center shrink-0">
+                                        ${initials}
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-bold text-espresso leading-tight">${rev.author}</p>
+                                        <p class="text-[11px] text-espresso-muted">${rev.badge} • ${rev.date}</p>
+                                    </div>
+                                </div>
+                                <span class="text-champagne text-xs tracking-tighter shrink-0">★★★★★</span>
+                            </div>
+
+                            <!-- Review Body -->
+                            <p class="text-sm text-espresso-light leading-relaxed mb-4">
+                                "${rev.text}"
+                            </p>
+                        </div>
+
+                        <!-- Owner Reply Accordion -->
+                        ${rev.reply ? `
+                            <div class="pt-3 border-t border-peach-100">
+                                <button type="button" onclick="toggleReply('${rev.id}')" class="inline-flex items-center gap-1.5 text-xs font-semibold text-peach-600 hover:text-espresso transition-colors">
+                                    <span id="reply-toggle-label-${rev.id}">${i18n[currentLang].owner_reply_show}</span>
+                                    <svg id="reply-icon-${rev.id}" class="w-3.5 h-3.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </button>
+                                <div id="reply-box-${rev.id}" class="hidden mt-2.5 p-3.5 rounded-2xl bg-peach-50 border-l-2 border-peach-400 text-xs text-espresso-light leading-relaxed">
+                                    <p class="font-bold text-espresso mb-1">Peachy Salon (Propriétaire)</p>
+                                    <p>${rev.reply}</p>
+                                </div>
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // ==================== INTERACTION HANDLERS ====================
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+
+            // Update switcher pills
+            const btnFr = document.getElementById('lang-fr');
+            const btnEn = document.getElementById('lang-en');
+            if (lang === 'fr') {
+                btnFr.className = 'px-2.5 py-1 rounded-full text-xs font-semibold transition-all bg-espresso text-white shadow-sm';
+                btnEn.className = 'px-2.5 py-1 rounded-full text-xs font-semibold transition-all text-espresso-light hover:text-espresso';
+            } else {
+                btnEn.className = 'px-2.5 py-1 rounded-full text-xs font-semibold transition-all bg-espresso text-white shadow-sm';
+                btnFr.className = 'px-2.5 py-1 rounded-full text-xs font-semibold transition-all text-espresso-light hover:text-espresso';
+            }
+
+            // Translate static elements
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang][key]) {
+                    el.textContent = i18n[lang][key];
+                }
+            });
+
+            renderServices();
+            renderBookingChips();
+            renderReviews();
+            updateMessagePreview();
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function filterServices(cat) {
+            activeServiceCategory = cat;
+            document.querySelectorAll('.service-tab').forEach(btn => {
+                if (btn.getAttribute('data-cat') === cat) {
+                    btn.className = 'service-tab active px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-espresso text-white shadow-card';
+                } else {
+                    btn.className = 'service-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-peach-100 text-espresso hover:bg-peach-200';
+                }
+            });
+            renderServices();
+        }
+
+        function filterReviews(cat) {
+            activeReviewCategory = cat;
+            document.querySelectorAll('.rev-pill').forEach(btn => {
+                if (btn.getAttribute('data-rev-cat') === cat) {
+                    btn.className = 'rev-pill active px-4 py-2 rounded-full text-xs font-semibold bg-espresso text-white transition-all';
+                } else {
+                    btn.className = 'rev-pill px-4 py-2 rounded-full text-xs font-semibold bg-white text-espresso border border-peach-200 hover:bg-peach-100 transition-all';
+                }
+            });
+            renderReviews();
+        }
+
+        function toggleReply(id) {
+            const box = document.getElementById(`reply-box-${id}`);
+            const label = document.getElementById(`reply-toggle-label-${id}`);
+            const icon = document.getElementById(`reply-icon-${id}`);
+            const isHidden = box.classList.contains('hidden');
+
+            if (isHidden) {
+                box.classList.remove('hidden');
+                label.textContent = i18n[currentLang].owner_reply_hide;
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                box.classList.add('hidden');
+                label.textContent = i18n[currentLang].owner_reply_show;
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function toggleServiceSelection(serviceTitleFr) {
+            const idx = selectedServices.indexOf(serviceTitleFr);
+            if (idx > -1) {
+                selectedServices.splice(idx, 1);
+            } else {
+                selectedServices.push(serviceTitleFr);
+                showToast(currentLang === 'fr' ? `Ajouté : ${serviceTitleFr}` : `Added: ${serviceTitleFr}`);
+            }
+            renderServices();
+            renderBookingChips();
+            updateMessagePreview();
+        }
+
+        function selectSpecialist(spec) {
+            selectedSpecialist = spec;
+            document.querySelectorAll('.spec-btn').forEach(btn => {
+                if (btn.getAttribute('data-spec') === spec) {
+                    btn.className = 'spec-btn active py-2.5 px-3 rounded-xl text-xs font-semibold border border-espresso bg-espresso text-white transition-all';
+                } else {
+                    btn.className = 'spec-btn py-2.5 px-3 rounded-xl text-xs font-semibold border border-peach-200 bg-peach-50 text-espresso hover:bg-peach-100 transition-all';
+                }
+            });
+            updateMessagePreview();
+        }
+
+        function bookWithSpecialist(spec) {
+            selectSpecialist(spec);
+            document.getElementById('reserver').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function updateMessagePreview() {
+            const dateVal = document.getElementById('book-date').value || (currentLang === 'fr' ? 'À définir' : 'TBD');
+            const timeVal = document.getElementById('book-time').value;
+            const nameVal = document.getElementById('book-name').value.trim() || (currentLang === 'fr' ? 'Cliente' : 'Client');
+            const phoneVal = document.getElementById('book-phone').value.trim() || '—';
+            const servicesList = selectedServices.length > 0 ? selectedServices.join(', ') : (currentLang === 'fr' ? 'Renseignement / Devis' : 'Inquiry / Quote');
+
+            const previewText = currentLang === 'fr'
+                ? `Bonjour Peachy Salon ✨\nJe souhaite réserver un rendez-vous :\n\n• Prestations : ${servicesList}\n• Spécialiste : ${selectedSpecialist}\n• Date & Heure : ${dateVal} à ${timeVal}\n• Nom : ${nameVal}\n• Tél : ${phoneVal}\n\nMerci beaucoup ! 💕`
+                : `Hello Peachy Salon ✨\nI would like to book an appointment:\n\n• Services: ${servicesList}\n• Specialist: ${selectedSpecialist}\n• Date & Time: ${dateVal} at ${timeVal}\n• Name: ${nameVal}\n• Phone: ${phoneVal}\n\nThank you! 💕`;
+
+            document.getElementById('dm-preview-text').textContent = previewText;
+        }
+
+        function copyBookingMessage(isInstagramRedirect) {
+            const text = document.getElementById('dm-preview-text').textContent;
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showToast(
+                    isInstagramRedirect
+                        ? (currentLang === 'fr' ? 'Message copié ! Collez-le dans le DM Instagram.' : 'Message copied! Paste it in Instagram DM.')
+                        : (currentLang === 'fr' ? 'Message de réservation copié !' : 'Booking message copied!')
+                );
+            } catch (err) {
+                console.error('Copy failed', err);
+            }
+            document.body.removeChild(textarea);
+        }
+
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+            copyBookingMessage(false);
+            const nameVal = document.getElementById('book-name').value.trim();
+            const dateVal = document.getElementById('book-date').value;
+            const timeVal = document.getElementById('book-time').value;
+            const servicesList = selectedServices.length > 0 ? selectedServices.join(', ') : 'Séance beauté';
+
+            const summary = currentLang === 'fr'
+                ? `Merci ${nameVal} ! Votre demande pour (${servicesList}) avec ${selectedSpecialist} le ${dateVal} à ${timeVal} est prête. Votre message a été copié : envoyez-le sur Instagram pour validation immédiate.`
+                : `Thank you ${nameVal}! Your request for (${servicesList}) with ${selectedSpecialist} on ${dateVal} at ${timeVal} is ready. Your message has been copied—send it via Instagram for instant confirmation.`;
+
+            document.getElementById('modal-summary-text').textContent = summary;
+            document.getElementById('confirmation-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('confirmation-modal').classList.add('hidden');
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-msg').textContent = msg;
+            toast.classList.remove('hidden');
+            clearTimeout(window.toastTimer);
+            window.toastTimer = setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3400);
+        }
+
+        // Initialize Page
+        window.addEventListener('DOMContentLoaded', () => {
+            // Set default date to tomorrow
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            document.getElementById('book-date').valueAsDate = tomorrow;
+
+            renderServices();
+            renderBookingChips();
+            renderReviews();
+            updateMessagePreview();
+        });
+    </script>
+</body>
+</html>
